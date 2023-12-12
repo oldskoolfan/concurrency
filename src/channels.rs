@@ -1,6 +1,7 @@
 use std::{sync::mpsc, thread, time::Duration};
 
 pub fn run_channels() {
+  println!("BEGIN CHANNELS");
   let (tx, rx) = mpsc::channel();
   let tx_clone = tx.clone();
 

@@ -1,6 +1,7 @@
 use std::{thread, time::Duration, vec};
 
 pub fn run_threads() {
+  println!("BEGIN THREADS");
   // 16.1, 16.2
   let handle = thread::spawn(|| {
     for i in 1..=10 {
